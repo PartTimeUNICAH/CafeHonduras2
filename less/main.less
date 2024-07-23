@@ -1,0 +1,37 @@
+@primary-color: #ac6f82;
+@primary-text-color: #000;
+@secondary-color: #cfa093;
+@alt-color: #f3d0a4;
+@alt-color-2: #893f71;
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: @primary-color;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: @alt-color-2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@import "mediaqueries.less";
+@import "navigation.less";
+@import "index.less";
+@import "footer.less";

@@ -1,0 +1,27 @@
+.hamburger {
+  display: none;
+}
+
+.nav-bar {
+  z-index: 9;
+  ul {
+    display: flex;
+    li a {
+      display: block;
+      color: @primary-text-color;
+      font-size: 20px;
+      padding: 10px 15px;
+      border-radius: 50px;
+      transition: 0.2s;
+      margin: 0 5px;
+    }
+    a.active {
+      color: rgb(255, 255, 255);
+      background: @primary-color;
+    }
+    a:hover {
+      color: black;
+      background-color: @alt-color;
+    }
+  }
+}
