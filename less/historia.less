@@ -37,7 +37,6 @@ hr:after {
 }
 
 article {
-  color: #ccc;
   margin-left: 50%;
   position: relative;
   max-width: 66em;
@@ -46,28 +45,24 @@ article {
 .encabezado {
   text-align: center;
   padding: 0 2em;
-}
+  h1 {
+    .headline-1,
+    .headline-2 {
+      line-height: 1;
+    }
 
-h1 {
-  text-transform: uppercase;
-  font-weight: 400;
+    .headline-1 {
+      font-size: 6vw;
+    }
 
-  .headline-1,
-  .headline-2 {
-    line-height: 1;
-  }
-
-  .headline-1 {
-    font-size: 6vw;
-  }
-
-  .headline-2 {
-    font-size: 4.5vw;
+    .headline-2 {
+      font-size: 4.5vw;
+    }
   }
 }
 
 .subheading {
-  color: #ccc;
+  color: @primary-text-color;
   font-size: 1.5625em;
   max-width: 25em;
   margin: 0 auto;
@@ -75,49 +70,44 @@ h1 {
   padding-bottom: 1.5em;
 }
 
-section {
+.content-wrapper {
   column-width: 14em;
   column-gap: 1.33em;
-  padding: 0 3em;
-}
-
-img {
-  max-width: 100%;
-  margin-bottom: 1.33em;
-  vertical-align: middle;
-}
-
-blockquote {
-  border-left: 0.5em solid @alt-color;
-  font-size: 2em;
-  padding: 0.5em;
-  line-height: 1.5;
-  margin-left: 0;
-  margin-right: 0;
-  z-index: 2;
-  position: absolute;
-  right: 100%;
-  top: 64.33vh;
-  width: 9em;
-  background: @alt-color-2;
-
-  &::before,
-  &::after {
+  padding: 2em 3em;
+  color: @primary-text-color;
+  img {
+    max-width: 100%;
+    margin-bottom: 1.33em;
+    vertical-align: middle;
+  }
+  blockquote {
+    border-left: 0.5em solid @alt-color;
+    font-size: 2em;
+    padding: 0.5em;
+    line-height: 1.5;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 2;
+    position: absolute;
+    right: 100%;
+    top: 61.33vh;
+    width: 9em;
+    background: @alt-color-2;
     color: #ccc;
-    font-size: 1.25em;
-    line-height: 0;
-  }
 
-  &::before {
-    content: open-quote;
-  }
+    &::before,
+    &::after {
+      color: #ccc;
+      font-size: 1.25em;
+      line-height: 0;
+    }
 
-  &::after {
-    content: close-quote;
-  }
-}
+    &::before {
+      content: open-quote;
+    }
 
-footer {
-  z-index: 1;
-  position: relative;
+    &::after {
+      content: close-quote;
+    }
+  }
 }
