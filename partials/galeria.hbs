@@ -1,0 +1,7 @@
+<section class="imagenes col-12">
+  {{#each galeria.images}}
+    <div class="gallery-img col-4 col-s-6 col-xs-12" id="img{{@index}}">
+      <img src="{{this.src}}" alt="{{this.alt}}" />
+    </div>
+  {{/each}}
+</section>

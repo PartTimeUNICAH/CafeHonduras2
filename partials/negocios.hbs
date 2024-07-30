@@ -1,0 +1,11 @@
+<section class="todoCards">
+  {{#each negocios.cards}}
+    <div class="card">
+      <img src="{{this.src}}" alt="{{this.alt}}" />
+      <div class="text-box">
+        <h3>{{this.title}}</h3>
+        <p>{{this.description}}</p>
+      </div>
+    </div>
+  {{/each}}
+</section>
