@@ -1,0 +1,51 @@
+.contacto {
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @alt-color-3;
+  h2 {
+    color: @primary-text-color;
+    padding: 30px;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.75rem;
+    padding: 30px;
+  }
+}
+
+.donaciones {
+  grid-column: span 12;
+
+  h2 {
+    color: @primary-text-color;
+    font-style: italic;
+  }
+
+  img {
+    margin: 10px 0;
+  }
+}
+
+.cita_biblica {
+  grid-column: span 12;
+  font-style: italic;
+  color: @alt-color;
+  text-align: center;
+  p {
+    font-size: 2.5rem;
+    padding: 40px;
+    font-style: oblique;
+  }
+}
+
+.donaciones {
+  margin: 0 auto;
+  img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    display: inline-block;
+  }
+}
