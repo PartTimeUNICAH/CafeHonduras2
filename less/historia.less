@@ -1,54 +1,10 @@
-header {
-  width: 100%;
-  height: 80px;
-  background-color: @alt-color-2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 9;
-  position: relative;
-}
-.cafeimagen {
-  img {
-    width: 100%;
-    height: 30vw;
-    padding: 50px;
-    object-fit: cover;
-    display: block;
-    border-radius: 70px;
-  }
-}
-
-.lowerImg {
-  img {
-    width: 100%;
-    height: 45vh;
-    padding: 40px;
-    object-fit: cover;
-    display: block;
-  }
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-}
-
-.logoimg {
-  width: 80px;
-  height: auto;
-  margin-right: 10px;
-  padding-left: 0px;
-}
-
 .profile {
-  background: url("https://i.pinimg.com/736x/42/98/2a/42982aa2cb91c0e13ac64770e12302c2.jpg") center 30%;
+  background: url("https://i.pinimg.com/736x/42/98/2a/42982aa2cb91c0e13ac64770e12302c2.jpg")
+    center 30%;
   box-shadow: inset 0 0 5em 1em @primary-text-color;
   height: 50vh;
   background-size: cover;
-  z-index: 0;
+  z-index: -1;
   position: relative;
 }
 
@@ -60,8 +16,6 @@ header {
   bottom: 0;
   height: auto;
 }
-
-
 
 hr {
   overflow: visible;
@@ -125,15 +79,6 @@ section {
   column-width: 14em;
   column-gap: 1.33em;
   padding: 0 3em;
-    
-  p:first-of-type:first-letter {
-  float: left;
-  font-size: 7em;
-  line-height: 1;
-  margin-top: -0.2em;
-  margin-bottom: -0.2em;
-  margin-right: 0.1em;
-  }
 }
 
 img {
@@ -152,7 +97,7 @@ blockquote {
   z-index: 2;
   position: absolute;
   right: 100%;
-  top: 70vh;
+  top: 64.33vh;
   width: 9em;
   background: @alt-color-2;
 
@@ -172,7 +117,7 @@ blockquote {
   }
 }
 
-footer{
+footer {
   z-index: 1;
   position: relative;
 }
