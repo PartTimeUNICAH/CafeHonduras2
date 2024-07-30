@@ -11,38 +11,6 @@
     display: none;
   }
   
-  .nav-bar {
-    
-    z-index: 9;
-    
-  }
-  
-  .nav-bar ul {
-    display: flex;
-  }
-  
-  .nav-bar ul li a {
-    display: block;
-    color: #000;
-    font-size: 20px;
-    padding: 10px 15px;
-    border-radius: 50px;
-    transition: 0.2s;
-    margin: 0 5px;
-    
-  }
-  
-  .nav-bar ul li a.active {
-    color: rgb(255, 255, 255);
-    background: #f3d0a4;
-  }
-  
-  .nav-bar ul li a:hover {
-    color: black;
-    background-color: #893f71;
-  }
-  
-  
   .profile {
     background: url("https://i.pinimg.com/736x/42/98/2a/42982aa2cb91c0e13ac64770e12302c2.jpg") center 30%;
     box-shadow: inset 0 0 5em 1em #000;
