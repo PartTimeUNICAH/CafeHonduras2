@@ -1,3 +1,20 @@
+.contacto {
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @alt-color-3;
+  padding: 30px;
+  h2 {
+    color: @primary-text-color;
+    font-size: 2rem;
+    margin-right: 30px;
+  }
+  p {
+    font-size: 1.75rem;
+  }
+}
+
 .actions {
   flex: 1 1 100%;
   text-align: center;
@@ -20,11 +37,24 @@
 
 .imgs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
   img {
     padding: 20px;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contacto {
+    padding: 15px;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 }

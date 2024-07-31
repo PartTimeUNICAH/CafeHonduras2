@@ -1,17 +1,17 @@
-.contacto {
+.donacion {
   grid-column: span 12;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: @alt-color-3;
+  padding: 30px;
   h2 {
     color: @primary-text-color;
-    padding: 30px;
     font-size: 2rem;
+    margin-right: 30px;
   }
   p {
     font-size: 1.75rem;
-    padding: 30px;
   }
 }
 
@@ -43,9 +43,32 @@
 .donaciones {
   margin: 0 auto;
   img {
-    width: 400px;
+    width: 360px;
     height: 500px;
     object-fit: cover;
     display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .donacion {
+    padding: 15px;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .cita_biblica {
+    p {
+      font-size: 1.75rem;
+    }
+  }
+  .donaciones {
+    h2 {
+      font-size: 1rem;
+      padding: 20px;
+    }
   }
 }
